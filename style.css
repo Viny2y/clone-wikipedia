@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    font-family:  Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #202122;
+}
+
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #c8ffd0;
+    border-bottom: 1px solid #ffffff;
+    padding: 10px 20px;
+    overflow: visible;
+    position: relative;
+    z-index: 100;
+}
+
+
+.pesquisa{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 260px;
+    margin: 0 20px;
+    padding: 0 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    gap: 8px;
+}
+
+.pesquisa:focus-within {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.pesquisa::before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='rgba(255,255,255,0.7)' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#EntradaPesquisa{
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: Helvetica, sans-serif;
+}
+
+#EntradaPesquisa::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+.itens {
+  display: none;
+  list-style: none;
+  padding: 6px 0;
+  margin: 6px 0 0;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  overflow: hidden;
+}
+
+
+.iten a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 14px;
+  color: #202122;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.15s;
+}
+
+
+.iten a::before {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23a2a9b1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.iten a:hover {
+  background: #f8f9fa;
+  color: #0645ad;
+}
+
+.iten a:hover::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%230645ad' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E");
+}
+
+#sem_resultados{
+    display: none;
+    text-align: center;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #888;
+}
+
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+.barra input {
+    padding: 5px;
+    width: 250px;
+}
+
+
+.pagina {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.content {
+    flex: 3;
+    background: white;
+    padding: 20px;
+    border-right: 1px solid #a2a9b1;
+}
+
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+}
+
+
+.infobox {
+    border: 1px solid #a2a9b1;
+    background: #f8f9fa;
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+.infobox img {
+    width: 100%;
+}
+
+
+h1 {
+    font-size: 28px;
+    border-bottom: 1px solid #a2a9b1;
+}
+
+
+h2 {
+    border-bottom: 1px solid #a2a9b1;
+    font-size: 20px;
+}
+
+
+a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.toc {
+    border: 1px solid #a2a9b1;
+    background: #f8f9fa;
+    padding: 10px;
+    width: 250px;
+    font-size: 14px;
+}
