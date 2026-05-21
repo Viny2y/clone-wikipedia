@@ -19,5 +19,7 @@ Certifique-se de que os arquivos style.css e arquivo.js estejam na mesma pasta q
 
 Abra o arquivo index.html em qualquer navegador web moderno (Chrome, Edge, Firefox, Safari).
 
+Na barra de pesquisa, no canto superior direito, voce pode pesquisar entre 5 times: Corinthians, Flamengo, Palmeiras, Santos e São paulo.
+
 📄 Licença
 Este projeto possui fins estritamente educacionais e de estudo de desenvolvimento front-end. Os textos e informações foram baseados na enciclopédia livre Wikipédia.
